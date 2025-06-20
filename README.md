@@ -62,8 +62,6 @@ The interface has been designed with **Java AWT** components such as `Frame`, `L
 - Donor Deletion
 - Success Confirmation
 
-*(Note: Images like `blood7.jpg`, `blood3.jpg`, etc., should be placed in the appropriate resource folder if compiling manually.)*
-
 ---
 
 ## ▶️ How to Run
