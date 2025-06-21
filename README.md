@@ -5,8 +5,6 @@ A simple GUI-based **Blood Donation System** developed using **Java AWT** for Ob
 ## 👩‍💻 Developed By
 
 **Name:** S. Vedhavithya  
-**Roll No:** 22ITR115  
-**Class:** B.Tech IT-B  
 During my First Year of Engineering 
 
 ---
