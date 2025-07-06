@@ -68,3 +68,9 @@ The interface has been designed with **Java AWT** components such as `Frame`, `L
 2. Compile the program:
    ```bash
    javac vv.java
+   ```
+
+3. Run the Program:
+    ```bash
+   java vv
+   ```
