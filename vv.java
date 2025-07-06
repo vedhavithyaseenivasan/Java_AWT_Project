@@ -12,10 +12,10 @@ Label la2=new Label("Create an Account ");
 Button bu1=new Button("SIGN IN");
 Button bu2=new Button("SIGN UP");
 
-bu1.setBounds(500,450,100,30);
-bu2.setBounds(500,500,100,30);
-la1.setBounds(350,450,100,30);
-la2.setBounds(350,500,100,30);
+bu1.setBounds(500,500,100,30);
+bu2.setBounds(500,550,100,30);
+la1.setBounds(350,500,100,30);
+la2.setBounds(350,550,100,30);
 
 add(bu1);
 add(bu2);
@@ -25,7 +25,7 @@ add(la2);
 setTitle("Blood Donation System");
 setSize(1920,1080);
 setLayout(null);
-backgroundImage=Toolkit.getDefaultToolkit().getImage("blood7.jpg");
+backgroundImage=Toolkit.getDefaultToolkit().getImage("b1.png");
 setVisible(true);
 
 bu1.addActionListener(new ActionListener()
@@ -99,7 +99,7 @@ add(t2);
 setTitle("Login page");
 setSize(1920,1080);
 setLayout(null);
-backgroundImage=Toolkit.getDefaultToolkit().getImage("blood3.jpg");
+backgroundImage=Toolkit.getDefaultToolkit().getImage("b3.jpg");
 setVisible(true);
 
 b1.addActionListener(new ActionListener()
@@ -175,7 +175,7 @@ add(l);
 setLayout(null);
 setTitle("Create an Account");
 setSize(1920,1080);
-backgroundImage=Toolkit.getDefaultToolkit().getImage("blood5.jpg");
+backgroundImage=Toolkit.getDefaultToolkit().getImage("b2.png");
 setVisible(true);
 
 bu3.addActionListener(new ActionListener()
@@ -216,7 +216,7 @@ add(b);
 setTitle("Blood Groups");
 setSize(1920,1080);
 setLayout(null);
-backgroundImage=Toolkit.getDefaultToolkit().getImage("blood9.jpeg");
+backgroundImage=Toolkit.getDefaultToolkit().getImage("b4.png");
 setVisible(true);
 
 b.addActionListener(new ActionListener()
@@ -269,7 +269,7 @@ add(b3);
 setTitle("Selection");
 setSize(1920,1080);
 setLayout(null);
-backgroundImage=Toolkit.getDefaultToolkit().getImage("blood6.jpg");
+backgroundImage=Toolkit.getDefaultToolkit().getImage("b5.jpg");
 setVisible(true);
 
 b1.addActionListener(new ActionListener()
@@ -738,7 +738,7 @@ add(s);
 setTitle("Add Donar");
 setSize(1920,1080);
 setLayout(null);
-backgroundImage=Toolkit.getDefaultToolkit().getImage("blood4.jpg");
+backgroundImage=Toolkit.getDefaultToolkit().getImage("b6.jpg");
 setVisible(true);
 
 b.addActionListener(new ActionListener()
@@ -779,133 +779,128 @@ super.paint(g);
 }
 }
 
-class eleven extends Frame
-{
-private Image backgroundImage;
-eleven()
-{
-Label l=new Label("Donar Details");
-l.setFont(new Font("Algerian",Font.ITALIC,25));
-l.setAlignment(Label.CENTER);
-l.setBounds(100,70,270,30);
-add(l);
+class eleven extends Frame {
+    private Image backgroundImage;
 
-Label l1=new Label("City: ");
-Label l2=new Label("State: ");
-Label l3=new Label("Country: ");
-Label l4=new Label("Address: ");
-Label l5=new Label("Covid-19 Plasma Donar: ");
-Label l6=new Label("If U have other disease: ");
-Label l7=new Label("If Yes,Enter the disease: ");
-TextField t1=new TextField();
-TextField t2=new TextField();
-TextField t3=new TextField();
-TextArea t4=new TextArea();
-TextField t5=new TextField();
-Button b=new Button("SAVE");
-Button b1=new Button("BACK");
-Button b2=new Button("CLEAR");
+    eleven() {
+        // Title label
+        Label l = new Label("Donar Details");
+        l.setFont(new Font("Algerian", Font.ITALIC, 25));
+        l.setAlignment(Label.CENTER);
+        l.setBounds(100, 70, 270, 30);
+        add(l);
 
-CheckboxGroup cb=new CheckboxGroup();
-Checkbox c1=new Checkbox("Yes",cb,false);
-c1.setBounds(230,455,60,30);
-Checkbox c2=new Checkbox("No",cb,false);
-c2.setBounds(300,455,130,30);
+        // Form labels and fields
+        Label l1 = new Label("City: ");
+        Label l2 = new Label("State: ");
+        Label l3 = new Label("Country: ");
+        Label l4 = new Label("Address: ");
+        Label l5 = new Label("Covid-19 Plasma Donar: ");
+        Label l6 = new Label("If U have other disease: ");
+        Label l7 = new Label("If Yes,Enter the disease: ");
 
-CheckboxGroup cb1=new CheckboxGroup();
-Checkbox c3=new Checkbox("Yes",cb1,false);
-c3.setBounds(230,510,60,30);
-Checkbox c4=new Checkbox("No",cb1,false);
-c4.setBounds(300,510,130,30);
+        TextField t1 = new TextField();
+        TextField t2 = new TextField();
+        TextField t3 = new TextField();
+        TextArea t4 = new TextArea();
+        TextField t5 = new TextField();
 
-l1.setBounds(80,148,100,50);
-l2.setBounds(80,198,100,50);
-l3.setBounds(80,248,100,50);
-l4.setBounds(80,298,100,50);
-l5.setBounds(60,445,160,50);
-l6.setBounds(60,500,160,50);
-l7.setBounds(60,550,160,50);
-t1.setBounds(200,155,130,30);
-t2.setBounds(200,205,130,30);
-t3.setBounds(200,255,130,30);
-t4.setBounds(200,305,130,100);
-t5.setBounds(230,550,130,30);
-b.setBounds(90,630,60,30);
-b1.setBounds(170,630,60,30);
-b2.setBounds(250,630,60,30);
+        Button b = new Button("SAVE");
+        Button b1 = new Button("BACK");
+        Button b2 = new Button("CLEAR");
 
-add(l1);
-add(l2);
-add(l3);
-add(l4);
-add(l5);
-add(l6);
-add(l7);
-add(t1);
-add(t2);
-add(t3);
-add(t4);
-add(t5);
-add(c1);
-add(c2);
-add(c3);
-add(c4);
-add(b);
-add(b1);
-add(b2);
+        // Radio button groups
+        CheckboxGroup cb = new CheckboxGroup();
+        Checkbox c1 = new Checkbox("Yes", cb, false);
+        c1.setBounds(230, 455, 60, 30);
+        Checkbox c2 = new Checkbox("No", cb, false);
+        c2.setBounds(300, 455, 130, 30);
 
-setTitle("Add Donar ");
-setSize(1920,1080);
-setLayout(null);
-backgroundImage=Toolkit.getDefaultToolkit().getImage("blood4.jpg");
-setVisible(true);
+        CheckboxGroup cb1 = new CheckboxGroup();
+        Checkbox c3 = new Checkbox("Yes", cb1, false);
+        c3.setBounds(230, 510, 60, 30);
+        Checkbox c4 = new Checkbox("No", cb1, false);
+        c4.setBounds(300, 510, 130, 30);
 
-b.addActionListener(new ActionListener()
-{
-public void actionPerformed(ActionEvent e)
-{
-dispose();
-twelve nextPage = new twelve();
-nextPage.setVisible(true);
-}
-});
+        // Set bounds
+        l1.setBounds(80, 148, 100, 50);
+        l2.setBounds(80, 198, 100, 50);
+        l3.setBounds(80, 248, 100, 50);
+        l4.setBounds(80, 298, 100, 50);
+        l5.setBounds(60, 445, 160, 50);
+        l6.setBounds(60, 500, 160, 50);
+        l7.setBounds(60, 550, 160, 50);
 
-b1.addActionListener(new ActionListener()
-{
-public void actionPerformed(ActionEvent e)
-{
-dispose();
-ten nextPage = new ten();
-nextPage.setVisible(true);
-}
-});
+        t1.setBounds(200, 155, 130, 30);
+        t2.setBounds(200, 205, 130, 30);
+        t3.setBounds(200, 255, 130, 30);
+        t4.setBounds(200, 305, 130, 100);
+        t5.setBounds(230, 550, 130, 30);
 
-b2.addActionListener(new ActionListener()
-{
-public void actionPerformed(ActionEvent e)
-{
-t5.setText("");
-t1.setText("");
-t2.setText("");
-t3.setText("");
-t4.setText("");
-}
-});
+        b.setBounds(90, 630, 60, 30);
+        b1.setBounds(170, 630, 60, 30);
+        b2.setBounds(250, 630, 60, 30);
 
-addWindowListener(new WindowAdapter()
-{
-public void windowClosing(WindowEvent e)
-{
-dispose();
-}
-});
-}
+        // Add components
+        add(l1); add(l2); add(l3); add(l4); add(l5); add(l6); add(l7);
+        add(t1); add(t2); add(t3); add(t4); add(t5);
+        add(c1); add(c2); add(c3); add(c4);
+        add(b); add(b1); add(b2);
 
-public void paint(Graphics g)
-{
-g.drawImage(backgroundImage,600,0,getWidth(),getHeight(),this);
-super.paint(g);
-}
+        // Frame settings
+        setTitle("Add Donar ");
+        setLayout(null);
+        setSize(1000, 700);
+        setVisible(true);
+
+        // Load and track background image
+        backgroundImage = Toolkit.getDefaultToolkit().getImage("b6.png");
+        MediaTracker tracker = new MediaTracker(this);
+        tracker.addImage(backgroundImage, 0);
+        try {
+            tracker.waitForAll();
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        }
+
+        // Button actions
+        b.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                new twelve().setVisible(true);  // Replace with your actual next frame
+            }
+        });
+
+        b1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                new ten().setVisible(true);  // Replace with your actual back frame
+            }
+        });
+
+        b2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                t1.setText("");
+                t2.setText("");
+                t3.setText("");
+                t4.setText("");
+                t5.setText("");
+            }
+        });
+
+        // Window close
+        addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                dispose();
+            }
+        });
+    }
+
+    public void paint(Graphics g) {
+        super.paint(g);  // Paint components first
+        // Draw background image from center to right
+        g.drawImage(backgroundImage, getWidth() / 2, 0, getWidth() / 2, getHeight(), this);
+    }
 }
 
 class twelve extends Frame
@@ -928,9 +923,8 @@ add(b);
 setTitle("Saved");
 setSize(1920,1080);
 setLayout(null);
-backgroundImage=Toolkit.getDefaultToolkit().getImage("blood8.png");
+backgroundImage=Toolkit.getDefaultToolkit().getImage("b7.jpg");
 setVisible(true);
-
 addWindowListener(new WindowAdapter()
 {
 public void windowClosing(WindowEvent e)
@@ -978,8 +972,3 @@ public static void main(String args[])
 one o=new one();
 }
 }
-
-
-
-
-
